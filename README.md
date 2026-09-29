@@ -1,30 +1,37 @@
-# MAS Publishing Co.
+# MAS Publishing Co. Official Website
 
-Static book website for **Catasterism** and **I Didn’t Do Anything to Lose Except Try My Hardest**, using the supplied covers and MAS Publishing Co. artwork.
+Website for **MAS Publishing Co.** (`https://maspublishing.co`), an independent literary publisher based in California publishing novels by **Michael Silberman**.
 
-## Preview
+## Featured Titles
+1. **Catasterism** by Michael Silberman
+   - Print ISBN: `979-8-9978965-1-5`
+   - Format: Hardcover, Paperback, Ebook
+2. **I Didn't Do Anything to Lose Except Try My Hardest: A Novel of Gambling, Family, and Memory** by Michael Silberman
+   - Print ISBN: `979-8-9978965-0-8`
+   - Format: Paperback, Ebook
 
-Run `python3 -m http.server 4173 --directory dist` from this folder, then open http://localhost:4173. You can also open `dist/index.html` directly. No install or build is required.
+---
 
-## Website files
+## Website Structure
+* `index.html` — Homepage featuring publisher overview, full catalog, author spotlight, and rights/press inquiries.
+* `catasterism.html` — Dedicated title page with synopsis, metadata, and Chapter One excerpt.
+* `iddatletmh.html` — Dedicated title page with synopsis, metadata, and "The Form" opening excerpt.
+* `style.css` — Custom responsive, typography-forward design matching the MAS Publishing aesthetic.
+* `assets/` — Book covers, high-resolution branding, and artwork.
+* `CNAME` — Custom domain pointer for `maspublishing.co`.
+* `.nojekyll` — Bypasses Jekyll processing for GitHub Pages deployment.
 
-- `dist/index.html` — book descriptions and reader dialogs containing short verbatim manuscript excerpts.
-- `dist/styles.css` — responsive typography, layout, and reading view.
-- `dist/script.js` — accessible native-dialog interaction.
-- `dist/assets/` — supplied cover and publisher images.
+---
 
-The complete manuscripts are not included. Byline spelling follows each supplied cover: Michael Silberman for Catasterism and Mike Silberman for Try My Hardest.
+## Deployment & DNS Configuration (Spaceship.com)
 
-## Publishing
+1. **GitHub Pages Custom Domain:**
+   - In GitHub repository settings: **Settings > Pages > Custom domain**, set to `maspublishing.co`.
+   - Enable **Enforce HTTPS**.
 
-The GitHub Pages workflow publishes only `dist/` when changes reach `main`. In the repository's Settings → Pages, select GitHub Actions as the source.
-
-Intended custom domain: `maspublishing.co`. Connect it in Pages settings after domain ownership and DNS access are confirmed. A repository push alone does not connect this domain.
-
-## Purchase links
-
-The website clearly says “Purchase links coming soon” because confirmed retailer URLs have not been supplied. When those URLs are available, replace each availability message with a purchase link. Do not invent product IDs, prices, formats, or stock status.
-
-## Rights
-
-© 2026 MAS Publishing Co. / Michael Silberman. All rights reserved. No open-source license is granted for the book excerpts, artwork, or other site content.
+2. **Spaceship DNS Records:**
+   - **Type A** | Host: `@` | Value: `185.199.108.153`
+   - **Type A** | Host: `@` | Value: `185.199.109.153`
+   - **Type A** | Host: `@` | Value: `185.199.110.153`
+   - **Type A** | Host: `@` | Value: `185.199.111.153`
+   - **Type CNAME** | Host: `www` | Value: `<username>.github.io.`
