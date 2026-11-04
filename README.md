@@ -1,9 +1,9 @@
 # MAS Publishing Co.
 
-Public site for the California imprint of Michael Silberman at https://maspublishing.co/.
+Public site for an independent California fiction imprint at https://maspublishing.co/.
 
-- `index.html` introduces the imprint and features its two novels.
-- `catasterism.html` and `iddatletmh.html` are the books’ shareable reading pages. The excerpts come from the projects’ Golden Master manuscripts.
-- `style.css` and `assets/` hold the shared layout, cover art, imprint banner, and type. The supplied artwork is served as WebP. EB Garamond is licensed under the SIL Open Font License in `assets/fonts/OFL.txt`.
+- `index.html` features Good for It, By Arrangement, The Front Unit, and I Didn’t Do Anything to Lose Except Try My Hardest. Catasterism has its own forthcoming section.
+- `iddatletmh.html` contains a short excerpt from the book’s Golden Master. `catasterism.html` introduces the forthcoming novel.
+- `style.css` and `assets/` hold the shared layout, artwork, and type. EB Garamond is licensed under the SIL Open Font License in `assets/fonts/OFL.txt`.
 
-Preview from the repository root with `python3 -m http.server 8765`. GitHub Pages publishes from the root of `main`; `CNAME` records the public domain.
+Preview from the repository root with `python3 -m http.server 8765`. GitHub Pages publishes from the root of `main`. `CNAME` records the public domain.
