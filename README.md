@@ -1,37 +1,9 @@
-# MAS Publishing Co. Official Website
+# MAS Publishing Co.
 
-Website for **MAS Publishing Co.** (`https://maspublishing.co`), an independent literary publisher based in California publishing novels by **Michael Silberman**.
+Public site for the California imprint of Michael Silberman at https://maspublishing.co/.
 
-## Featured Titles
-1. **Catasterism** by Michael Silberman
-   - Print ISBN: `979-8-9978965-1-5`
-   - Format: Hardcover, Paperback, Ebook
-2. **I Didn't Do Anything to Lose Except Try My Hardest: A Novel of Gambling, Family, and Memory** by Michael Silberman
-   - Print ISBN: `979-8-9978965-0-8`
-   - Format: Paperback, Ebook
+- `index.html` introduces the imprint and features its two novels.
+- `catasterism.html` and `iddatletmh.html` are the books’ shareable reading pages. The excerpts come from the projects’ Golden Master manuscripts.
+- `style.css` and `assets/` hold the shared layout, cover art, imprint banner, and type. The supplied artwork is served as WebP. EB Garamond is licensed under the SIL Open Font License in `assets/fonts/OFL.txt`.
 
----
-
-## Website Structure
-* `index.html` — Homepage featuring publisher overview, full catalog, author spotlight, and rights/press inquiries.
-* `catasterism.html` — Dedicated title page with synopsis, metadata, and Chapter One excerpt.
-* `iddatletmh.html` — Dedicated title page with synopsis, metadata, and "The Form" opening excerpt.
-* `style.css` — Custom responsive, typography-forward design matching the MAS Publishing aesthetic.
-* `assets/` — Book covers, high-resolution branding, and artwork.
-* `CNAME` — Custom domain pointer for `maspublishing.co`.
-* `.nojekyll` — Bypasses Jekyll processing for GitHub Pages deployment.
-
----
-
-## Deployment & DNS Configuration (Spaceship.com)
-
-1. **GitHub Pages Custom Domain:**
-   - In GitHub repository settings: **Settings > Pages > Custom domain**, set to `maspublishing.co`.
-   - Enable **Enforce HTTPS**.
-
-2. **Spaceship DNS Records:**
-   - **Type A** | Host: `@` | Value: `185.199.108.153`
-   - **Type A** | Host: `@` | Value: `185.199.109.153`
-   - **Type A** | Host: `@` | Value: `185.199.110.153`
-   - **Type A** | Host: `@` | Value: `185.199.111.153`
-   - **Type CNAME** | Host: `www` | Value: `<username>.github.io.`
+Preview from the repository root with `python3 -m http.server 8765`. GitHub Pages publishes from the root of `main`; `CNAME` records the public domain.
