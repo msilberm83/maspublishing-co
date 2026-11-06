@@ -1,9 +1,9 @@
 # MAS Publishing Co.
 
-Public site for an independent California fiction imprint at https://maspublishing.co/.
+Story-focused public website at https://maspublishing.co/. All six titles are forthcoming and unreleased. No retail purchase links or announced release dates.
 
-- `index.html` features Good for It, By Arrangement, The Front Unit, and I Didn’t Do Anything to Lose Except Try My Hardest. Catasterism has its own forthcoming section.
-- `iddatletmh.html` contains a short excerpt from the book’s Golden Master. `catasterism.html` introduces the forthcoming novel.
-- `style.css` and `assets/` hold the shared layout, artwork, and type. EB Garamond is licensed under the SIL Open Font License in `assets/fonts/OFL.txt`.
+Uses the supplied, unchanged logo.png, manuscript-grounded setting illustrations, and short excerpts from the authoritative masters. Original generated PNGs, source citations, prompts, and the previous site backup live in the sibling MAS Publishing Site Art directory, outside the public web root. Existing cover assets remain preserved.
 
-Preview from the repository root with `python3 -m http.server 8765`. GitHub Pages publishes from the root of `main`. `CNAME` records the public domain.
+Static HTML/CSS; no build dependencies, external fonts, trackers, or nonfunctional signup form. GitHub Pages serves the root of main. Preview with python3 -m http.server 8765.
+
+IMPORTANT: after manuscript revisions, refresh excerpts through ../MAS Publishing Site Art/build_site.py and verify EXCERPT_SOURCES.json against current masters before deployment.
